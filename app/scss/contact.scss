@@ -1,0 +1,18 @@
+@import './fonts';
+@import './reset';
+@import './vars';
+@import './global';
+
+@import './components/header';
+@import './components/section/contact';
+@import './components/section/consultation';
+@import './components/footer';
+
+.contact {
+  padding: 120px 0 0;
+}
+
+.consultation {
+  margin-bottom: 0;
+  margin-top: -30px;
+}

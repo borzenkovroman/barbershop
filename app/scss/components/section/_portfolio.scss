@@ -1,0 +1,148 @@
+.portfolio {
+  padding: 45px 0;
+
+  &__top {
+    background-color: $brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 35px 20px 35px;
+    }
+  }
+
+  &__img {
+    margin-right: 50px;
+    object-fit: cover;
+
+    @media (max-width: 992px) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-right: 120px;
+    color: $default;
+    max-width: 250px;
+    width: 100%;
+    text-align: left;
+    
+    @media (max-width: 1200px) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 38px;
+      max-width: 100%;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: fit-content;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
+  }
+
+  &__descr-text {
+    max-width: 260px;
+    width: 100%;
+    font-size: 18px;
+    color: $browntext;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 576px) {
+      text-align: left;
+    }
+  }
+
+  &__bottom-list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;  
+      align-items: center;
+    }
+
+    @media (max-width: 576px) {
+      grid-gap: 10px;
+    }
+
+    &--hidden {
+      display: none;
+
+      &.active {
+        display: grid;
+
+        @media (max-width: 1200px) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__bottom-img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  &__btn-main {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto;
+
+    &.active {
+      display: none;
+    }
+    
+    &:focus {
+      
+      .portfolio__bottom-icon {
+        fill: $orange;
+      }
+    }
+  }
+  
+  &__bottom-icon {
+    transition: fill 0.7s;
+    fill: $white;
+  }
+}

@@ -1,0 +1,47 @@
+@import './fonts';
+@import './reset';
+@import './vars';
+@import './global';
+
+@import './components/header';
+
+@import './components/section/hero';
+@import './components/section/portfolio';
+@import './components/section/consultation';
+@import './components/section/contact';
+
+@import './components/footer';
+
+.hero {
+  padding-bottom: 45px;
+  
+  &__top {
+    height: 420px;
+    margin-bottom: 0;
+  }
+
+  &__top-wrapper {
+    display: block;
+  }
+
+  &__top-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__top-title {
+    max-width: 695px;
+  }
+
+  &__top-text {
+    max-width: 230px;
+  }
+}
+
+.consultation {
+  margin-bottom: 0;
+}
+
+.contact {
+  padding-top: 60px;
+}

@@ -5,6 +5,7 @@ const concat      = require('gulp-concat');
 const autoprefixer= require('gulp-autoprefixer');
 const uglify      = require('gulp-uglify');
 const imagemin    = require('gulp-imagemin');
+const rename        = require('gulp-rename');
 const del         = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -18,9 +19,11 @@ function browsersync () {
 }
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src('app/scss/*.scss')
     .pipe(scss({outputStyle: 'expanded'}))
-    .pipe(concat('style.min.css'))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
       grid: true
@@ -32,7 +35,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/slick-carousel/slick/slick.min.js',
+    'node_modules/slick-carousel/slick/slick.min.js',
     // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'app/js/main.js'
   ])

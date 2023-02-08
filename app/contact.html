@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Barber Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="./css/contact.min.css">
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu">
+            <a class="logo menu__logo click-area int" href="http://barbershop.neurocenter.com.ua/index.html#home">
+              <img class="logo__img" src="./images/icons/logo.svg" alt="barbershop logo" width="200" height="45">
+            </a>
+
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#about">
+                  About Us
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#prices">
+                  Our masters
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/portfolio.html">
+                  Portfolio
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#testimonials">
+                  Testimonials
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link link click-area int present" href="#contact">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+
+            <button class="menu__btn int" type="button">
+              <span class="menu__line"></span>
+              <span class="sr-only">open main menu</span>
+            </button>
+          </nav>
+          
+          <div class="menu__address-wrapper">
+            <address class="menu__address">
+              302 W 50th St, NY, NY 10019
+            </address>
+
+            <svg class="menu__address-icon" width="36" height="36">
+              <use xlink:href="images/icons/sprite.svg#location"></use>
+            </svg>
+          </div>
+
+          <div class="menu__contact-wrapper">
+            <div class="menu__contact-inner">
+              <a class="menu__contact link click-area int" href="tel:+88000000000">
+                8 (800) 000-00-00
+              </a>
+
+              <p class="menu__contact-text">
+                Daily from 9 to 20
+              </p>
+            </div>
+
+            <svg class="menu__contact-icon" width="36" height="36">
+              <use xlink:href="images/icons/sprite.svg#tel"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="contact__wrapper" style="background-image: url('../images/contact/map.svg');" id="contact">
+          <div class="container">
+            <div class="contact__box">
+              <h3 class="contact__title title">
+                Contacts
+              </h3>
+      
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <svg class="contact__item-icon" width="54" height="54">
+                    <use xlink:href="images/icons/sprite.svg#contact-tel"></use>
+                  </svg>
+  
+                  <a class="contact__item-link link click-area" href="tel:+88000000000">
+                    8 (800) 000-00-00
+                  </a>
+                </li>
+                
+                <li class="contact__item">
+                  <svg class="contact__item-icon" width="54" height="54">
+                    <use xlink:href="images/icons/sprite.svg#email"></use>
+                  </svg>
+  
+                  <a class="contact__item-link link click-area" href="mailto:info@sitename.com">
+                    info@sitename.com
+                  </a>
+                </li>
+                
+                <li class="contact__item">
+                  <svg class="contact__item-icon" width="54" height="54">
+                    <use xlink:href="images/icons/sprite.svg#contact-location"></use>
+                  </svg>
+  
+                  <p class="contact__item-text">
+                    302 W 50th St, NY, NY 10019
+                  </p>
+                </li>
+                
+                <li class="contact__item">
+                  <svg class="contact__item-icon" width="54" height="54">
+                    <use xlink:href="images/icons/sprite.svg#clock"></use>
+                  </svg>
+  
+                  <p class="contact__item-text">
+                    Daily from 9 to 20
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="consultation">
+          <h5 class="consultation__title">
+            Get in consultation with our expert barbers
+          </h5>
+    
+          <p class="consultation__descr-text">
+            Expand Call-to-Action Details
+          </p>
+    
+          <form class="consultation__form">
+            <label class="consultation__label">
+              <span class="sr-only">Enter your phone number</span>
+              <input class="consultation__input" type="tel" placeholder="+1 (___) ___-__-__" required>
+    
+              </input>
+            </label>
+            
+            <label class="consultation__label">
+              <span class="sr-only">Enter your email</span>
+              <input class="consultation__input" type="email" placeholder="Email" required>
+    
+              </input>
+            </label>
+    
+            <button class="consultation__btn-main btn-main int" type="submit">
+              Book now
+            </button>
+    
+            <label class="consultation__label consultation__label--checkbox">
+              <span class="sr-only">click here to confirm the agreement</span>
+              <input class="consultation__checkbox" type="checkbox" required>
+              By clicking on the button, you agree to the terms of processing personal data
+              </input>
+            </label>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        © All rights reserved
+      </p>
+    </footer>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

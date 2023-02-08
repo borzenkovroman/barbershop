@@ -3,40 +3,41 @@ body {
   scroll-behavior: smooth;
 }
 
-// body {
-//   color: #000;
-//   font-size: 18px;
-//   line-height: 1.45;
-//   font-family: 'HelveticaNeueCyr', sans-serif;
-//   font-weight: 300;
-//   letter-spacing: normal;
-//   font-style: normal;
-//   background-color: #FCFCFC;
-// }
+body {
+  color: $default;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-style: normal;
+  background-color: $lightbrown;
 
-// .container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-// }
+  &.lock {
+    overflow: hidden;
+  }
+}
 
-// .section {
-//   padding: 100px 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-//   @media (max-width: 1200px) {
-//     padding: 70px 0;
-//   }
+.section {
+  padding: 60px 0;
 
-//   @media (max-width: 768px) {
-//     padding: 50px 0;
-//   }
+  @media (max-width: 992px) {
+    padding: 40px 0;
+  }
 
-//   @media (max-width: 576px) {
-//     padding: 35px 0;
-//   }
-// }
+  @media (max-width: 576px) {
+    padding: 35px 0;
+  }
+}
 
-.sr-only {
+.sr-only,
+.anchor {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -50,11 +51,12 @@ body {
 }
 
 .int {
-  transition: background-color .5s,
-    transform .5s,
-    opacity .5s,
-    outline .5s,
-    border-color .5s;
+  transition: background-color 0.5s,
+              opacity 0.5s,
+              outline 0.5s,
+              color 0.3s,
+              border-color 0.5s,
+              outline-color 0.5s;
 }
 
 .click-area {
@@ -71,42 +73,115 @@ body {
   }
 }
 
-// .link {
-//   font-size: 14px;
-//   line-height: 1.45;
-//   font-weight: 300;
-//   color: $default;
-//   text-decoration: none;
-// }
+.link {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $default;
+  text-decoration: none;
+}
 
-// .title {
-//   text-align: left;
-//   font-size: 60px;
-//   line-height: 110%;
-//   text-transform: uppercase;
-//   letter-spacing: normal;
-//   font-weight: 550;
-//   letter-spacing: 0.07em;
+.title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 125%;
+  font-weight: 700;
+  color: $white;
 
-//   &__part {
-//     font-weight: 300;
-//     font-style: italic;
-//     letter-spacing: 0;
-//   }
-// }
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
 
-// .logo {
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
+}
 
-//   &:focus {
-//     outline: 1px solid $default;
-//     outline-offset: 6px;
-//   }
+.descr-text {
+  font-size: 15px;
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
 
-//   &:hover {
-//     opacity: 0.5;
-//   }
+.logo {
+  position: relative;
+  z-index: 2;
 
-//   &:active {
-//     opacity: 1;
-//   }
-// }
+  &:focus {
+    outline: 1px solid $orange;
+    outline-offset: 6px;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.btn-main {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: $orange;
+  padding: 18px 50px;
+  color: $white;
+  transition: background-color 0.4s,
+  color 0.3s,
+  outline 0.4s;
+  
+  @media (max-width: 992px) {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+    
+  &:focus {
+    background-color: $default;
+    color: $orange;
+  }
+
+  &:hover {
+    outline: 1px solid $default;
+    background-color: transparent;
+  }
+
+  &:active {
+    color: $default;
+    outline: 1px solid $orange;
+  }
+
+  &--transparent {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background-color: transparent;
+    outline: 1px solid $default;
+    font-size: 14px;
+
+    @media (max-width: 576px) {
+      padding: 5px 10px;
+    }
+
+    &:focus {
+      color: $default;
+      outline: 1px solid $orange;
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: $orange;
+      outline-color: $orange;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.present {
+  border-bottom: 1px solid $orange;
+}

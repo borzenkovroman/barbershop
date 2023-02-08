@@ -1,0 +1,207 @@
+.hero {
+  padding-top: 120px;
+
+  @media (max-width: 992px) {
+    padding-top: 90px;
+  }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    padding-top: 60px;
+  }
+
+  &__top {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 120px);
+    margin-bottom: -250px;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, rgba(33, 24, 20, 0.57) 0%, rgba(38, 28, 24, 0.42) 100%);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      height: calc(100vh - 60px);
+    }
+  }
+
+  &__top-wrapper {
+    padding: 40px 60px 60px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    
+    @media (max-width: 768px) {
+      padding: 25px 20px;
+      justify-content: space-between;
+    }
+  }
+  
+  &__top-inner {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__top-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: $white;
+    max-width: 670px;
+    line-height: 110%;
+
+    @media (max-width: 992px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 55px;
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 30px;
+      max-width: 100%;
+    }
+  }
+
+  &__top-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      gap: 15px;
+    }
+  }
+
+  &__top-btn {
+    width: fit-content;
+  }
+
+  &__top-text {
+    font-size: 18px;
+    max-width: 300px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    width: fit-content;
+  }
+
+  &__bottom {
+    position: relative;
+    z-index: -1;
+    padding: 400px 0 125px;
+    background-color: $brown;
+
+    @media (max-width: 992px) {
+      padding: 300px 0 60px;
+    }
+  }
+
+  &__bottom-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+
+  &__bottom-item {
+    padding-top: 100px;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 78px;
+      height: 78px;
+    }
+
+    &--barbershop {
+
+      &::before {
+        background-image: url('../images/icons/barbershop.png');
+      }
+    }
+
+    &--hairgel {
+      
+      &::before {
+        background-image: url('../images/icons/hair-gel.png');
+      }
+    }
+
+    &--beard {
+      
+      &::before {
+        background-image: url('../images/icons/beard.png');
+      }
+    }
+  }
+
+  &__bottom-title {
+    font-size: 24px;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  &__bottom-descr {
+    color: $browntext;
+  }
+}
