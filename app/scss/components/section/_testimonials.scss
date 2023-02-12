@@ -1,11 +1,13 @@
 .testimonials {
-  padding-bottom: 155px;
+  padding-bottom: 120px;
+  background-color: $darkgrey;
 
   @media (max-width: 768px) {
     padding-bottom: 50px;
   }
 
   &__title {
+    color: $white;
     margin-bottom: 24px;
 
     @media (max-width: 576px) {
@@ -14,6 +16,7 @@
   }
 
   &__descr-text {
+    color: $lightgrey;
     margin-bottom: 60px;
 
     @media (max-width: 576px) {
@@ -22,7 +25,9 @@
   }
 
   &__list {
-    display: flex;
+    position: relative;
+    border-top: 1px solid $lightgrey;
+    border-bottom: 1px solid $lightgrey;
     padding: 0 36px;
 
     @media (max-width: 576px) {
@@ -31,8 +36,11 @@
   }
   
   &__item {
-    max-width: 280px;
-    width: 100%;  
+    padding: 40px 0;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
     &:not(:last-child) {
 
@@ -46,7 +54,7 @@
     }
 
     @media (max-width: 768px) {
-      text-align: center;
+      flex-wrap: wrap;
     }
   }
 
@@ -60,43 +68,25 @@
   }
 
   &__item-title {
-    font-size: 14px;
+    font-size: 24px;
     margin-bottom: 24px;
     color: $white;
+    text-align: center;
 
     @media (max-width: 768px) {
       max-width: 280px;
       width: 100%;
       margin: 10px auto;
-    }
-  }
-
-  &__item-text {
-    color: $white;
-    margin-bottom: 24px;
-
-    @media (max-width: 992px) {
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      max-width: 280px;
-      width: 100%;
-      margin: 10px auto;
-    }
-
-    &--hidden {
-      display: none;
-
-      &.active {
-        display: block;
-      }
     }
   }
 
   &__item-link {
-    color: $orange;
-    transition: color 0.3s;
+    padding-bottom: 5px;
+    color: $black;
+    font-weight: 700;
+    transition: color 0.3s,
+                border-bottom 0.4s;
+    border-bottom: 1px solid $black;
 
     @media (max-width: 768px) {
       max-width: 280px;
@@ -110,13 +100,63 @@
     &:focus {
       opacity: 0.5;
     }
-
+    
     &:active {
-      color: $brown;
+      color: $darkgrey;
+      border-bottom: none;
+    }
+    
+    &:hover {
+      border-bottom: 1px solid $lightgrey;
+      color: $lightgrey;
+    }
+  }
+}
+
+.client-altegio {
+
+  &__item {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__rate {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 5px;
+  }
+  
+  &__star {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  &__comment {
+    color: $white;
+    margin-bottom: 24px;
+    color: $lightgrey;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
     }
 
-    &:hover {
-      color: $default;
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 10px auto;
     }
   }
 }
@@ -124,11 +164,13 @@
 .slick-icon {
   position: relative;
   z-index: 2;
-  fill: $brown;
+  fill: $black;
 }
 
 .slick-arrow {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
   &::before {
     content: '';
@@ -138,21 +180,20 @@
     transform: translate(-50%, -50%);
     width: 34px;
     height: 34px;
-    background-color: $browntext;
+    background-color: $lightgrey;
     transition: background-color 0.4s,
                 fill 0.4s;
-    border-radius: 50%;
     z-index: 1;
   }
 
   &:hover {
 
     &::before {
-      background-color: $brown;
+      background-color: $darkgrey;
     }
 
     .slick-icon {
-      fill: $browntext;
+      fill: $lightgrey;
     }
   }
 
@@ -163,27 +204,27 @@
     }
 
     .slick-icon {
-      fill: $brown;
+      fill: $black;
     }
   }
 }
 
 .slick-prev {
-  left: -23px;
+  left: 0;
 }
 
 .slick-next {
-  right: -23px;
+  right: 0;
 }
 
 .slick-disabled {
   cursor: not-allowed;
   
   &::before {
-    background-color: $default;
+    background-color: $lightgrey;
   }
   
   .slick-icon {
-    fill: $orange;
+    fill: $darkgrey;
   }
 }

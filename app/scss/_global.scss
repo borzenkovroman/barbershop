@@ -1,17 +1,18 @@
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  color: $default;
+  color: $black;
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   letter-spacing: normal;
   font-style: normal;
-  background-color: $lightbrown;
+  background-color: $white;
 
   &.lock {
     overflow: hidden;
@@ -25,6 +26,7 @@ body {
 }
 
 .section {
+  background-color: $white;
   padding: 60px 0;
 
   @media (max-width: 992px) {
@@ -77,7 +79,7 @@ body {
   font-size: 15px;
   line-height: 1.5;
   font-weight: 400;
-  color: $default;
+  color: $grey;
   text-decoration: none;
 }
 
@@ -86,7 +88,7 @@ body {
   font-size: 48px;
   line-height: 125%;
   font-weight: 700;
-  color: $white;
+  color: $black;
 
   @media (max-width: 768px) {
     font-size: 35px;
@@ -109,7 +111,7 @@ body {
   z-index: 2;
 
   &:focus {
-    outline: 1px solid $orange;
+    outline: 1px solid $darkgrey;
     outline-offset: 6px;
     border-radius: 4px;
   }
@@ -127,7 +129,7 @@ body {
   font-family: 'Playfair Display', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  background-color: $orange;
+  background-color: $darkgrey;
   padding: 18px 50px;
   color: $white;
   transition: background-color 0.4s,
@@ -140,40 +142,43 @@ body {
   }
     
   &:focus {
-    background-color: $default;
-    color: $orange;
+    background-color: $grey;
+    color: $black;
   }
 
   &:hover {
-    outline: 1px solid $default;
+    outline: 1px solid $grey;
     background-color: transparent;
+    color: $darkgrey;
   }
 
   &:active {
-    color: $default;
-    outline: 1px solid $orange;
+    color: $lightgrey;
+    outline: 1px solid $darkgrey;
   }
 
   &--transparent {
     text-transform: uppercase;
     padding: 10px 25px;
     background-color: transparent;
-    outline: 1px solid $default;
+    outline: 1px solid $lightgrey;
     font-size: 14px;
+    color: $darkgrey;
 
     @media (max-width: 576px) {
       padding: 5px 10px;
     }
 
     &:focus {
-      color: $default;
-      outline: 1px solid $orange;
+      color: $lightgrey;
+      outline: 1px solid $darkgrey;
       background-color: transparent;
     }
 
     &:hover {
-      background-color: $orange;
-      outline-color: $orange;
+      background-color: $darkgrey;
+      outline-color: $darkgrey;
+      color: $white;
     }
 
     &:active {
@@ -183,5 +188,5 @@ body {
 }
 
 .present {
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid $darkgrey;
 }

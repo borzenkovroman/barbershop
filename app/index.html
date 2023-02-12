@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Barber Barbershop</title>
+    <!-- заголовок сайту в браузері -->
+    <title>STRUM | Барбершоп Бровари</title>
 
+    <!-- іконка в браузері -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,12 +15,12 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap"
-      rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Fira+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
 
@@ -28,100 +30,85 @@
         <div class="header__inner">
           <nav class="menu">
             <a class="logo menu__logo click-area int" href="#home">
-              <img class="logo__img" src="./images/icons/logo.svg" alt="barbershop logo" width="200" height="45">
+              <img class="logo__img" src="./images/icons/logo.svg" alt="логотип барбершопу струм" width="45" height="45">
             </a>
 
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link link click-area int" href="#about">
-                  About Us
+                  Про нас
                 </a>
               </li>
 
               <li class="menu__item">
                 <a class="menu__link link click-area int" href="#prices">
-                  Our masters
+                  Послуги
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/portfolio.html">
-                  Portfolio
+                <a class="menu__link link click-area int" href="portfolio.html">
+                  Майстри
                 </a>
               </li>
 
               <li class="menu__item">
                 <a class="menu__link link click-area int" href="#testimonials">
-                  Testimonials
+                  Відгуки
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/contact.html">
-                  Contacts
+                <a class="menu__link link click-area int" href="#contact">
+                  Контакти
                 </a>
               </li>
             </ul>
 
             <button class="menu__btn int" type="button">
               <span class="menu__line"></span>
-              <span class="sr-only">open main menu</span>
+              <span class="sr-only">натиснути для відкриття головного меню</span>
             </button>
           </nav>
-          
-          <div class="menu__address-wrapper">
-            <address class="menu__address">
-              302 W 50th St, NY, NY 10019
-            </address>
-
-            <svg class="menu__address-icon" width="36" height="36">
-              <use xlink:href="images/icons/sprite.svg#location"></use>
-            </svg>
-          </div>
-
-          <div class="menu__contact-wrapper">
-            <div class="menu__contact-inner">
-              <a class="menu__contact link click-area int" href="tel:+88000000000">
-                8 (800) 000-00-00
-              </a>
-
-              <p class="menu__contact-text">
-                Daily from 9 to 20
-              </p>
-            </div>
-
-            <svg class="menu__contact-icon" width="36" height="36">
-              <use xlink:href="images/icons/sprite.svg#tel"></use>
-            </svg>
-          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero section" id="home">
+      <section class="hero" id="home">
+        <div class="hero__media">
+          <video class="hero__video" poster="./images/hero/poster.webp" preload="auto" autoplay muted loop>
+            <source src="./images/hero/preview-mob.webm" type="video/webm">
+            <source src="./images/hero/preview.mp4" type="video/mp4">
+            <span class="sr-only">фонове відео яке відображає інтер'єр барбершопу та його майстрів</span>
+          </video>
+        </div>
+        
         <div class="container">
-          <div class="hero__top" style="background-image: url('../images/hero-top-bg.webp');">
+          <div class="hero__top">
             <div class="hero__top-wrapper">
               <div class="hero__top-inner">
                 <h1 class="hero__top-title">
-                  Men’s Barbershop in The Middle East
+                  Strum
+
+                  <span class="hero__top-title-part hero__top-title-part--darkgrey">
+                    Strum
+                  </span>
+
+                  <span class="hero__top-title-part hero__top-title-part--grey">
+                    Strum
+                  </span>
+
+                  <span class="hero__top-title-part hero__top-title-part--lightgrey">
+                    Strum
+                  </span>
                 </h1>
-
-                <div class="hero__top-box">
-                  <button class="hero__top-btn btn-main btn-main--transparent int" type="button">
-                    the highest rated
-                  </button>
-
-                  <p class="hero__top-text">
-                    Text that is placed at the bottom of the heading to reveal details
-                  </p>
-                </div>
               </div>
               
-              <button class="hero__btn btn-main int" onclick="document.location='contact.html'">
-                Book now
-              </button>
+              <a class="hero__btn link btn-main int"
+                href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                Онлайн запис
+              </a>
             </div>
           </div>
         </div>
@@ -129,109 +116,134 @@
         <div class="hero__bottom">
           <div class="container">
             <ul class="hero__bottom-list">
-              <li class="hero__bottom-item hero__bottom-item--barbershop">
+              <li class="hero__bottom-item hero__bottom-item--barber">
                 <h2 class="hero__bottom-title">
-                  Briefly describe the benefit
+                  Майстри
                 </h2>
 
                 <p class="hero__bottom-descr">
-                  Long text, in two lines, for clarity and detail
+                  постійно навчаються та вдосконалюють свої навики
                 </p>
               </li>
 
-              <li class="hero__bottom-item hero__bottom-item--hairgel">
+              <li class="hero__bottom-item hero__bottom-item--chair">
                 <h2 class="hero__bottom-title">
-                  Briefly describe the benefit
+                  Комфортні
                 </h2>
 
                 <p class="hero__bottom-descr">
-                  Long text, in two lines, for clarity and detail
+                  та ергономічні крісла для покращення вашого перебування у нас
                 </p>
               </li>
 
-              <li class="hero__bottom-item hero__bottom-item--beard">
+              <li class="hero__bottom-item hero__bottom-item--cosmetics">
                 <h2 class="hero__bottom-title">
-                  Briefly describe the benefit
+                  Подарункові сертифікати
                 </h2>
 
                 <p class="hero__bottom-descr">
-                  Long text, in two lines, for clarity and detail
+                  та широкий асортимент чоловічої косметики в наявності
+                </p>
+              </li>
+
+              <li class="hero__bottom-item hero__bottom-item--time">
+                <h2 class="hero__bottom-title">
+                  Приємні бонуси
+                </h2>
+
+                <p class="hero__bottom-descr">
+                  напої та розваги які не залишать нікого байдужим 
                 </p>
               </li>
             </ul>
+            <span class="anchor" id="about"></span>
           </div>
         </div>
-
-        <span class="anchor" id="about"></span>
       </section>
 
       <section class="about section">
         <div class="container">
           <h3 class="about__title title">
-            About Us
+            Про нас
           </h3>
 
-          <p class="about__descr-text descr-text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
-          </p>
+          <dl class="about__descr-text descr-text">
+            <dt class="about__descr-text-concept">
+              Strum Barbershop
+            </dt> 
+
+            <dd class="about__descr-text-definition">
+              — це затишне і приємне місце, яке надає Вам послуги високої якості. Наш барбершоп пропонує широкий вибір стрижок для кожного. Ви можете обрати стрижку за Вашими вподобаннями і відчути себе як
+              вдома. Наші досвідчені майстри допоможуть Вам у виборі найкращої зачіски, а наше персональне обслуговування зробить цей процес найкращим для Вас.
+            </dd> 
+          </dl>
 
           <ul class="about__grid">
             <li class="about__cell about__cell--big">
               <picture>
-                <source srcset="./images/about/barber-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/about/barber.webp" media="(min-width: 992px)">
+                <source srcset="./images/about/barber-tab.webp" media="(min-width: 576px)">
+                <source srcset="./images/about/barber-mob.webp" media="(max-width: 576px)">
+                <img class="about__img" src="./images/about/barber.webp" alt="вид на робочий процес з нашої кімнати відпочинку" width="580" height="337">
               </picture>
-              <img class="about__img" src="./images/about/barber.jpg" alt="Barber makes a classic haircut" width="580" height="337">
             </li>
 
             <li class="about__cell">
               <picture>
-                <source srcset="./images/about/scissors-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/about/scissors.jpg" media="(min-width: 576px)">
+                <source srcset="./images/about/scissors-mob.webp" media="(max-width: 576px)">
+                <img class="about__img" src="./images/about/scissors.jpg" alt="стерильні ножиці підвішені на гачку"
+                  width="280" height="280">
               </picture>
-              <img class="about__img" src="./images/about/scissors.jpg" alt="working scissors are hung on hooks"
-                width="280" height="280">
             </li>
 
             <li class="about__cell">
               <picture>
-                <source srcset="./images/portfolio/instruments-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/portfolio/yuriy/instruments.jpg" media="(max-width: 576px)">
+                <source srcset="./images/portfolio/yuriy/instruments-mob.jpg" media="(min-width: 576px)">
+                <img class="about__img" src="./images/portfolio/yuriy/instruments.jpg"
+                  alt="стерильні інструменти лежать на робочій поверхні"
+                  width="280" height="280">
               </picture>
-              <img class="about__img" src="./images/portfolio/instruments.jpg" alt="sterilized, clean tools lie on a towel"
-                width="280" height="280">
             </li>
 
             <li class="about__cell about__cell--big">
               <picture>
-                <source srcset="./images/about/interior-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/about/interior.webp" media="(min-width: 992px)">
+                <source srcset="./images/about/interior-tab.webp" media="(min-width: 576px)">
+                <source srcset="./images/about/interior-mob.webp" media="(max-width: 576px)">
+                <img class="about__img" src="./images/about/interior.webp" alt="вид зі входу на робочий процес" width="580" height="337">
               </picture>
-              <img class="about__img" src="./images/about/interior.jpg" alt="loft design of our interior" width="580" height="337">
             </li>
 
             <li class="about__cell">
               <picture>
-                <source srcset="./images/portfolio/shave-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/portfolio/yuriy/shave.webp" media="(min-width: 576px)">
+                <source srcset="./images/portfolio/yuriy/shave-mob.webp" media="(max-width: 576px)">
+                <img class="about__img" src="./images/portfolio/yuriy/shave.webp"
+                alt="Юрій Миронець виконує стрижку машинкою" width="280" height="280">
               </picture>
-              <img class="about__img" src="./images/portfolio/shave.jpg"
-              alt="barber makes shaving of beard using his dangerous razor" width="280" height="280">
             </li>
 
             <li class="about__cell">
               <picture>
-                <source srcset="./images/portfolio/razor-mob.jpg" media="(max-width: 576px)">
+                <source srcset="./images/portfolio/illa/arm.webp" media="(min-width: 576px)">
+                <source srcset="./images/portfolio/illa/arm-mob.webp" media="(max-width: 576px)">
+                <img class="about__img" src="./images/portfolio/illa/arm.webp" alt="Ілля Дмитренко виконує стрижку довгого волосся" width="280"
+                  height="280">
               </picture>
-              <img class="about__img" src="./images/portfolio/razor.jpg" alt="barber makes hair tattoo" width="280" height="280">
             </li>
           </ul>
 
           <div class="about__box">
             <button class="about__btn-main btn-main int" type="submit" onclick="document.location='portfolio.html'">
-              Our masters and their masterpieces
+              Наші майстри та їх роботи
             </button>
             
-            <button class="about__btn-main btn-main btn-main--transparent int" type="submit"
-              formaction="#">
-              Our Instagram
-            </button>
+            <a class="about__btn-main btn-main btn-main--transparent int link"
+            href="https://instagram.com/strum_barbershop?igshid=NTdlMDg3MTY=">
+            Інстаграм
+            </a>
           </div>
         </div>
 
@@ -241,535 +253,511 @@
       <section class="testimonials section">
         <div class="container">
           <h3 class="testimonials__title title">
-            Testimonials
+            Відгуки
           </h3>
           
           <p class="testimonials__descr-text descr-text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+            Майстри нашого барбершопу мають відмінну репутацію серед наших клієнтів. Вони завжди надають клієнтам
+            найкращі послуги і дотримуються високих стандартів якості. Клієнти повідомляють про відмінну організацію,
+            доступну ціну і дружелюбний персонал, який допомагає в побудові довготривалих зв'язків. Завдяки відмінній
+            якості та повазі до наших клієнтів барбершоп має високий рейтинг.
           </p>
 
           <div class="testimonials__list">
             <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/darrell.jpg" alt="Darrell Steward" width="280"
+              <div class="testimonials__box">
+                <img class="testimonials__img" src="./images/testimonials/illa.webp" alt="Ілля Дмитренко" width="280"
                 height="280">
+                
+                <h4 class="testimonials__item-title">
+                  Ілля Дмитренко
+                </h4>
+              </div>
+              
+              <div class="client-altegio">
+                <p class="client-altegio__text">
+                  Відгуки на Altegio
+                </p>
 
-              <h4 class="testimonials__item-title">
-                Darrell Steward
-              </h4>
+                <ul class="client-altegio__list">
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Andriy
+                    </p>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      В Іллі вже не вперше. Професіонал своєї справи, розуміє, що я хочу і як це найкраще втілити. Рекомендую!
+                    </p>
+                  </li>
+
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Anna Yaremenko
+                    </p>
+
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      Взахваті від обслуговування, знає підхід до дітей брат залишився взахваті
+                    </p>
+                  </li>
+
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Vlad
+                    </p>
+
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      Так а що тут оцінювати... Як завжди все гуд, крутий сервіс. Єдине що довго переживав щодо 1ї
+                      стрижки сина(рік та два місяці сину). Ілля навіть тут впорався і розвіяв всі переживання. Тепер
+                      буду з сином до Іллі систематично ходити)
+                    </p>
+                  </li>
+                </ul>
+                
+                <a class="testimonials__item-link link click-area" href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                  Читати всі відгуки
+                </a>
+              </div>
             </div>
             
             <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/marvin.jpg" alt="Marvin McKinney" width="280"
+              <div class="testimonials__box">
+                <img class="testimonials__img" src="./images/testimonials/sergiy.webp" alt="Сергій Цьовка" width="280"
                 height="280">
+                
+                <h4 class="testimonials__item-title">
+                  Сергій Цьовка
+                </h4>
+              </div>
+              
+              <div class="client-altegio">
+                <p class="client-altegio__text">
+                  Відгуки на Altegio
+                </p>
 
-              <h4 class="testimonials__item-title">
-                Marvin McKinney
-              </h4>
+                <ul class="client-altegio__list">
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Evgeniy
+                    </p>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      Талановитий майстер, знавець свого діла. Раджу всім хто турбується про рівні контури та симетрію.
+                    </p>
+                  </li>
+
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Roman
+                    </p>
+
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      Найкращий барбер якого я знаю! Три роки до нього ходжу! Рекомендую всім
+                    </p>
+                  </li>
+
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Zhenya Benya
+                    </p>
+
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+
+                    <p class="client-altegio__comment">
+                      Кращий майстер ,дуже крутий Барбершоп ,все сподобалось ,всім рекомендую
+                    </p>
+                  </li>
+                </ul>
+                
+                <a class="testimonials__item-link link click-area" href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                  Читати всі відгуки
+                </a>
+              </div>
             </div>
             
             <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/ronald.jpg" alt="Ronald Richards" width="280"
+              <div class="testimonials__box">
+                <img class="testimonials__img" src="./images/portfolio/yuriy/shave.webp" alt="Юрій Миронець" width="280"
                 height="280">
+                
+                <h4 class="testimonials__item-title">
+                  Юрій Миронець
+                </h4>
+              </div>
+              
+              <div class="client-altegio">
+                <p class="client-altegio__text">
+                  Відгуки на Altegio
+                </p>
 
-              <h4 class="testimonials__item-title">
-                Ronald Richards
-              </h4>
+                <ul class="client-altegio__list">
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Andriy
+                    </p>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/cody.jpg" alt="Cody Fisher" width="280"
-                height="280">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <h4 class="testimonials__item-title">
-                Cody Fisher
-              </h4>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                    <p class="client-altegio__comment">
+                      Цього барбера порадив брат, був вперше. Юра чудовий майстер) Допоміг з вибором нового стилю зачіски і з його втіленням. Можна прийти, насолодитись роботою людини, що любить свою справу і поспілкуватись за життя.
+                    </p>
+                  </li>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Vitalik
+                    </p>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/darrell.jpg" alt="Darrell Steward" width="280"
-                height="280">
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <h4 class="testimonials__item-title">
-                Darrell Steward
-              </h4>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/marvin.jpg" alt="Marvin McKinney" width="280"
-                height="280">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
 
-              <h4 class="testimonials__item-title">
-                Marvin McKinney
-              </h4>
+                    <p class="client-altegio__comment">
+                      Пам'ятаю одні з перших разів коли прийшов до Юри він спитав як стригти ) я кажу щоб було гарно)) с тих пір я знаю що можна нічого не казати і не хвилююсь бо знаю Юра негарно не вміє ))) одним словом the best of the best)))
+                    </p>
+                  </li>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                  <li class="client-altegio__item">
+                    <p class="client-altegio__name">
+                      Єvgen
+                    </p>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                    <div class="client-altegio__rate">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/ronald.jpg" alt="Ronald Richards" width="280"
-                height="280">
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <h4 class="testimonials__item-title">
-                Ronald Richards
-              </h4>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
 
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
+                      <svg class="contact-altegio__star" width="16" height="16">
+                        <use xlink:href="./images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
 
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/cody.jpg" alt="Cody Fisher" width="280"
-                height="280">
-
-              <h4 class="testimonials__item-title">
-                Cody Fisher
-              </h4>
-
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/darrell.jpg" alt="Darrell Steward" width="280"
-                height="280">
-
-              <h4 class="testimonials__item-title">
-                Darrell Steward
-              </h4>
-
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/marvin.jpg" alt="Marvin McKinney" width="280"
-                height="280">
-
-              <h4 class="testimonials__item-title">
-                Marvin McKinney
-              </h4>
-
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/ronald.jpg" alt="Ronald Richards" width="280"
-                height="280">
-
-              <h4 class="testimonials__item-title">
-                Ronald Richards
-              </h4>
-
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
-            </div>
-            
-            <div class="testimonials__item">
-              <img class="testimonials__img" src="./images/testimonials/cody.jpg" alt="Cody Fisher" width="280"
-                height="280">
-
-              <h4 class="testimonials__item-title">
-                Cody Fisher
-              </h4>
-
-              <p class="testimonials__item-text">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <p class="testimonials__item-text testimonials__item-text--hidden">
-                Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.
-              </p>
-
-              <a class="testimonials__item-link link click-area" href="#" formaction="https://www.barbershop.com#team">
-                Read full testimonial
-              </a>
+                    <p class="client-altegio__comment">
+                      Гарний майстер, фахівець своєї справи. Буду з задоволенням відвідувати ваш заклад.
+                    </p>
+                  </li>
+                </ul>
+                
+                <a class="testimonials__item-link link click-area" href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                  Читати всі відгуки
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <span class="anchor" id="prices"></span>
       </section>
 
-      <section class="prices" id="prices">
+      <section class="prices section">
         <div class="container">
           <h3 class="prices__title title">
-            Our Price
+            Послуги
           </h3>
-
-          <p class="prices__descr-text descr-text">
-            Subheading that reveals the details of the title and calls for the targeted action
-          </p>
           
           <ul class="prices__list">
             <li class="prices__item">
-              <img class="prices__item-img" src="./images/prices/hairtattoo.jpg" alt="client with perfect hair tattoo" width="280" height="283">
+              <img class="prices__item-img" src="./images/prices/long.webp" alt="гарно виконана чоловіча стрижка клієнту з довгим волоссям" width="280" height="283">
 
               <h4 class="prices__item-title">
-                Haircuts
+                Стрижки
               </h4>
 
               <ul class="prices__item-box">
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Regular Haircut
+                    Чоловіча стрижка
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
                     
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
                       
-                      20
+                      600
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Haircut + Shave
+                    Стрижка під насадку
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      19
+                      400
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Haircut + Beard Trim
+                    Дитяча стрижка
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      30
+                      500
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Beard Trim
+                    Укладання
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      22
+                      100
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Hair Tatoo
+                    Стрижка + борода
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      2 год 
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      45
+                      950
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Facial
+                    Стрижка під насадку + борода
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      2 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      15
-                    </span>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-            <li class="prices__item">
-              <img class="prices__item-img" src="./images/prices/beard.jpg" alt="satisfied client with perfect form of his beard" width="280" height="283">
-
-              <h4 class="prices__item-title">
-                Beard & Mo
-              </h4>
-
-              <ul class="prices__item-box">
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Regular Haircut
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      20
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Haircut + Shave
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      19
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Haircut + Beard Trim
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      30
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Beard Trim
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      22
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Hair Tatoo
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      45
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Facial
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      15
+                      750
                     </span>
                   </div>
                 </li>
@@ -777,310 +765,129 @@
             </li>
 
             <li class="prices__item">
-              <img class="prices__item-img" src="./images/prices/shaving.jpg" alt="clean-shaved client using a dangerous razor" width="280" height="283">
+              <img class="prices__item-img" src="./images/prices/beard.jpg" alt="задоволений клієнт з гарною бородою" width="280" height="283">
 
               <h4 class="prices__item-title">
-                Shaving
+                Борода
               </h4>
 
               <ul class="prices__item-box">
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Regular Haircut
+                    Моделювання бороди
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      20
+                      350
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Haircut + Shave
+                    Гоління голови
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      19
+                      500
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Haircut + Beard Trim
+                    Традиційне гоління
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      1 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      30
+                      500
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Beard Trim
+                    Стрижка + борода
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      2 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      22
+                      950
                     </span>
                   </div>
                 </li>
 
                 <li class="prices__item-cost">
                   <span class="prices__item-name">
-                    Hair Tatoo
+                    Стрижка під насадку + борода
                   </span>
 
                   <div class="prices__item-cost-inner">
                     <span class="prices__item-time">
-                      60 min
+                      2 год
                     </span>
 
                     <span class="prices__item-value">
                       <span class="prices__item-currency">
-                        $
+                        ₴
                       </span>
 
-                      45
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Facial
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      15
-                    </span>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-            <li class="prices__item">
-              <img class="prices__item-img" src="./images/prices/waxing.jpg" alt="performed waxing in hard location places" width="280" height="283">
-
-              <h4 class="prices__item-title">
-                Waxing
-              </h4>
-
-              <ul class="prices__item-box">
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Regular Haircut
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      20
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Haircut + Shave
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      19
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Haircut + Beard Trim
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      30
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Beard Trim
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      22
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Hair Tatoo
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      45
-                    </span>
-                  </div>
-                </li>
-
-                <li class="prices__item-cost">
-                  <span class="prices__item-name">
-                    Facial
-                  </span>
-
-                  <div class="prices__item-cost-inner">
-                    <span class="prices__item-time">
-                      60 min
-                    </span>
-
-                    <span class="prices__item-value">
-                      <span class="prices__item-currency">
-                        $
-                      </span>
-
-                      15
+                      750
                     </span>
                   </div>
                 </li>
               </ul>
             </li>
           </ul>
-
-          <div class="consultation">
-            <h5 class="consultation__title">
-              Get in consultation with our expert barbers
-            </h5> 
-            
-            <p class="consultation__descr-text">
-              Expand Call-to-Action Details
-            </p>
-
-            <form class="consultation__form">
-              <label class="consultation__label">
-                <span class="sr-only">Enter your phone number</span>
-                <input class="consultation__input" type="tel" placeholder="+1 (___) ___-__-__" required>
-
-                </input>
-              </label>
-              <label class="consultation__label">
-                <span class="sr-only">Enter your email</span>
-                <input class="consultation__input" type="email" placeholder="Email" required>
-
-                </input>
-              </label>
-              
-              <button class="consultation__btn-main btn-main int" type="submit">
-                Book now
-              </button>
-
-              <label class="consultation__label consultation__label--checkbox">
-                <span class="sr-only">click here to confirm the agreement</span>
-                <input class="consultation__checkbox" type="checkbox" required>
-                  By clicking on the button, you agree to the terms of processing personal data
-                </input>
-              </label>
-            </form>
-          </div>
         </div>
+        <span class="anchor" id="contact"></span>
       </section>
 
       <section class="contact">
-        <div class="contact__wrapper" style="background-image: url('../images/contact/map.svg');" id="contact">
+        <div class="contact__wrapper" id="contact">
+          <iframe class="contact__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.0100089780435!2d30.773916115618412!3d50.51538057948435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97872dba459%3A0xa8cb17c7af3d5be!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjyDQodC40LzQvtC90LXQvdC60LAsIDMw0LAsINCR0YDQvtCy0LDRgNC4LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA3NDAw!5e0!3m2!1suk!2sua!4v1676125995233!5m2!1suk!2sua"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="container">
             <div class="contact__box">
               <h3 class="contact__title title">
-                Contacts
+                Контакти
               </h3>
       
               <ul class="contact__list">
@@ -1089,8 +896,19 @@
                     <use xlink:href="images/icons/sprite.svg#contact-tel"></use>
                   </svg>
 
-                  <a class="contact__item-link link click-area" href="tel:+88000000000">
-                    8 (800) 000-00-00
+                  <a class="contact__item-link link click-area" href="tel:+380996001454">
+                    +38 (099) 600-14-54
+                  </a>
+                </li>
+
+                <li class="contact__item contact__item--instagram">
+                  <svg class="contact__item-icon" width="30" height="30">
+                    <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
+
+                  <a class="contact__item-link link click-area"
+                    href="https://www.instagram.com/strum_barbershop/?igshid=NTdlMDg3MTY%3D">
+                    @strum_barbershop
                   </a>
                 </li>
                 
@@ -1099,8 +917,9 @@
                     <use xlink:href="images/icons/sprite.svg#email"></use>
                   </svg>
 
-                  <a class="contact__item-link link click-area" href="mailto:info@sitename.com">
-                    info@sitename.com
+                  <a class="contact__item-link link click-area"
+                    href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                    Онлайн запис на Altegio
                   </a>
                 </li>
                 
@@ -1110,7 +929,7 @@
                   </svg>
 
                   <p class="contact__item-text">
-                    302 W 50th St, NY, NY 10019
+                    м. Бровари, вул.Василя Симоненка, 30А
                   </p>
                 </li>
                 
@@ -1120,7 +939,7 @@
                   </svg>
 
                   <p class="contact__item-text">
-                    Daily from 9 to 20
+                    Пн - Нд з 10:00 - 21:00
                   </p>
                 </li>
               </ul>
@@ -1130,10 +949,10 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <p class="footer__text">
-        © All rights reserved
-      </p>
+    <footer class="footer section">
+      <a class="logo footer__logo click-area int" href="#home">
+        <img class="logo__img" src="./images/icons/logo.svg" alt="логотип барбершопу струм" width="45" height="45">
+      </a>
     </footer>
     <script src="./js/main.min.js"></script>
   </body>

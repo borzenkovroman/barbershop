@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Barber Barbershop</title>
+    <title>STRUM | Барбершоп Бровари</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,108 +14,77 @@
   </head>
 
   <body id="body">
-    <header class="header">
+    <header class="header"> 
       <div class="container">
         <div class="header__inner">
           <nav class="menu">
-            <a class="logo menu__logo click-area int" href="http://barbershop.neurocenter.com.ua/index.html#home">
-              <img class="logo__img" src="./images/icons/logo.svg" alt="barbershop logo" width="200" height="45">
+            <a class="logo menu__logo click-area int" href="index.html#home">
+              <img class="logo__img" src="./images/icons/logo.svg" alt="логотип барбершопу струм" width="45"
+                height="45">
             </a>
 
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#about">
-                  About Us
+                <a class="menu__link link click-area int" href="index.html#about">
+                  Про нас
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#prices">
-                  Our masters
+                <a class="menu__link link click-area int" href="index.html#prices">
+                  Послуги
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int present" href="#portfolio">
-                  Portfolio
+                <a class="menu__link link click-area int" href="#">
+                  Майстри
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/index.html#testimonials">
-                  Testimonials
+                <a class="menu__link link click-area int" href="index.html#testimonials">
+                  Відгуки
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link link click-area int" href="http://barbershop.neurocenter.com.ua/contact.html">
-                  Contacts
+                <a class="menu__link link click-area int" href="#contact">
+                  Контакти
                 </a>
               </li>
             </ul>
 
             <button class="menu__btn int" type="button">
               <span class="menu__line"></span>
-              <span class="sr-only">open main menu</span>
+              <span class="sr-only">натиснути для відкриття головного меню</span>
             </button>
           </nav>
-          
-          <div class="menu__address-wrapper">
-            <address class="menu__address">
-              302 W 50th St, NY, NY 10019
-            </address>
-
-            <svg class="menu__address-icon" width="36" height="36">
-              <use xlink:href="images/icons/sprite.svg#location"></use>
-            </svg>
-          </div>
-
-          <div class="menu__contact-wrapper">
-            <div class="menu__contact-inner">
-              <a class="menu__contact link click-area int" href="tel:+88000000000">
-                8 (800) 000-00-00
-              </a>
-
-              <p class="menu__contact-text">
-                Daily from 9 to 20
-              </p>
-            </div>
-
-            <svg class="menu__contact-icon" width="36" height="36">
-              <use xlink:href="images/icons/sprite.svg#tel"></use>
-            </svg>
-          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero section" id="home">
+      <section class="portfolio-hero" style="background-image: url('../images/hero/poster.webp');" width="1920" height="1080" id="home">
         <div class="container">
-          <div class="hero__top" style="background-image: url('../images/portfolio-bg.jpg');">
-            <div class="hero__top-wrapper">
-              <div class="hero__top-inner">
-                <h1 class="hero__top-title">
-                  Our craftsmen make visitors beautiful and happier
-                </h1>
-                
-                <p class="hero__top-text">
-                  Text placed at the bottom of the title to reveal details
-                </p>
-              </div>
-            </div>
-          </div>
+          <h1 class="portfolio-hero__top-title title">
+            Наші майстри та їх роботи
+          </h1>
+
+          <p class="portfolio-hero__top-text">
+            Потрапивши в Strum, ти можеш бути впевненим у фінальному результаті роботи свого майстра
+          </p>
         </div>
       </section>
 
-      <section class="portfolio" id="devon">
+      <section class="portfolio" id="illa">
         <div class="container">
           <div class="portfolio__top">
-            <img class="portfolio__img" src="./images/portfolio/devon.jpg"
-            alt="Devon Lane is concentrated on the working proccess" width="180" height="180">
+            <img class="portfolio__img" src="./images/testimonials/illa.webp"
+            alt="Ілля Дмитренко сконцентрований на робочому процесі" width="180" height="180">
 
             <h6 class="portfolio__title title">
-              Devon Lane
+              Ілля Дмитренко
             </h6>
             
             <p class="portfolio__descr-text">
@@ -132,21 +101,21 @@
               <li class="portfolio__bottom-item">
                 <picture>
                   <source 
-                    srcset="./images/portfolio/shave.jpg" 
+                    srcset="./images/portfolio/illa/wave.webp" 
                     media="(min-width: 576px)">
                   <source 
-                  srcset="./images/portfolio/shave-mob.jpg" 
+                  srcset="./images/portfolio/illa/wave-mob.webp" 
                   media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/shave.jpg"
-                  alt="Devon Lane makes shaving of beard using his dangerous razor" width="280" height="280">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/wave.webp"
+                  alt="Ілля Дмитренко виконує стрижку довгого волосся використовуючи ножиці" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/razor.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/razor-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/razor.jpg" alt="Devon Lane makes hair tattoo"
+                  <source srcset="./images/portfolio/illa/cape.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/cape-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/cape.webp" alt="клієнт Іллі з довгим волоссям"
                   width="280"
                   height="280">
                 </picture>
@@ -154,140 +123,65 @@
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/mirror.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/mirror-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/mirror.jpg" alt="classical haircut view from the side" width="280" height="280">
+                  <source srcset="./images/portfolio/illa/double.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/double-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/double.webp" alt="сконцентрований Ілля виконує чоловічу стрижку" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/foam.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/foam-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/foam.jpg"
-                  alt="Devon Lane applies shaving foam" width="280" height="280">
+                  <source srcset="./images/portfolio/illa/arm.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/arm-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/arm.webp"
+                  alt="витончені багаторічним досвідом рухи Іллі" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/styling.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/styling-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/styling.jpg"
-                  alt="Devon Lane performs hair styling" width="280" height="280">
+                  <source srcset="./images/portfolio/illa/hide.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/hide-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/hide.webp"
+                  alt="вид з кімнати відпочинку на роботу Іллі" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/hero-top-bg.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/hero-top-bg-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/hero-top-bg.jpg" alt="Devon Lane performs haircut using dangerous razor"
+                  <source srcset="./images/portfolio/illa/black.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/black-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/black.webp" alt="стрижка машинкою у виконанні Іллі Дмитренко"
                   width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/sideburns.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/sideburns-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/sideburns.jpg"
-                  alt="Devon Lane shaves a client's sideburns" width="280"
-                  height="280">
+                  <source srcset="./images/portfolio/illa/white.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/white-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/white.webp"
+                    alt="чорно-біле фото робочого процесу" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/drying.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/drying-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/drying.jpg" alt="Devon Lane finished his work with proper drying of client's hair" width="280"
+                  <source srcset="./images/portfolio/illa/white.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/illa/white-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/illa/white.webp" alt="чорно-біле фото робочого процесу" width="280"
                   height="280">
                 </picture>
               </li>
             </ul>
 
-            <ul class="portfolio__bottom-list portfolio__bottom-list--hidden">
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/shave.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/shave-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/shave.jpg"
-                  alt="Devon Lane makes shaving of beard using his dangerous razor" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/razor.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/razor-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/razor.jpg" alt="Devon Lane makes hair tattoo"
-                  width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/mirror.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/mirror-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/mirror.jpg"
-                  alt="classical haircut view from the side" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/foam.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/foam-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/foam.jpg"
-                  alt="Devon Lane applies shaving foam" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/styling.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/styling-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/styling.jpg"
-                  alt="Devon Lane performs hair styling" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/hero-top-bg.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/hero-top-bg-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/hero-top-bg.jpg"
-                  alt="Devon Lane performs haircut using dangerous razor" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/sideburns.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/sideburns-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/sideburns.jpg"
-                  alt="Devon Lane shaves a client's sideburns" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/drying.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/drying-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/drying.jpg"
-                  alt="Devon Lane finished his work with proper drying of client's hair" width="280" height="280">
-                </picture>
-              </li>
-            </ul>
-
-            <button class="portfolio__btn-main btn-main" type="submit">
+            <a class="portfolio__btn-main btn-main link" href="https://instagram.com/strum_barbershop?igshid=NTdlMDg3MTY=">
               <svg class="portfolio__bottom-icon" width="20" height="20">
                 <use xlink:href="images/icons/sprite.svg#more"></use>
               </svg>
 
-              See all works
-            </button>
+              Дивитись всі роботи
+            </a>
           </div>
         </div>
       </section>
@@ -295,11 +189,11 @@
       <section class="portfolio" id="ronald">
         <div class="container">
           <div class="portfolio__top">
-            <img class="portfolio__img" src="./images/portfolio/ronald.jpg"
-              alt="Ronald Richards is concentrated on the working proccess" width="180" height="180">
+            <img class="portfolio__img" src="./images/testimonials/sergiy.webp"
+              alt="Сергій Цьовка професійно виконує свою роботу" width="180" height="180">
 
             <h6 class="portfolio__title title">
-              Ronald Richards
+              Сергій Цьовка
             </h6>
 
             <p class="portfolio__descr-text">
@@ -315,160 +209,85 @@
             <ul class="portfolio__bottom-list">
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/teenager.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/teenager-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/teenager.jpg"
-                  alt="Ronald Richards makes shaving of sideburns for teenager" width="280" height="280">
+                  <source srcset="./images/portfolio/sergiy/clean.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/clean-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/clean.webp"
+                  alt="Сергій Цьовка прибирає волосся з голови клієнта за допомогою щіточки" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/scissors.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/scissors-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/scissors.jpg"
-                  alt="Ronald Richards showing his professionalism using scissors"
+                  <source srcset="./images/portfolio/sergiy/clipper.webp" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/clipper-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/clipper.webp"
+                  alt="Сергій використовує професійну машинку для стрижки під насадку"
                   width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/detail.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/detail-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/detail.jpg"
-                  alt="every detail is important for Ronald Richards in his client's haircut" width="280" height="280">
+                  <source srcset="./images/portfolio/sergiy/edging.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/edging-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/edging.jpg"
+                  alt="чіткі контури та лінії чоловічої стрижки - робота Сергія" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/woman.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/woman-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/woman.jpg"
-                  alt="gentle shaving from our barberian" width="280" height="280">
+                  <source srcset="./images/portfolio/sergiy/foam.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/foam-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/foam.jpg"
+                  alt="гоління з використанням пінки" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/edging.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/edging-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/edging.jpg"
-                  alt="superb hair edging by Ronald Richards" width="280" height="280">
+                  <source srcset="./images/portfolio/sergiy/mirror.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/mirror-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/mirror.jpg"
+                  alt="клієнт оцінює результат роботи в дзеркалі позаду себе" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/clipper.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/clipper-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/clipper.jpg"
-                  alt="modern and expensive clippers are in uses of Ronald Richards" width="280" height="280">
+                  <source srcset="./images/portfolio/sergiy/razor.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/sergiy/razor-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/sergiy/razor.jpg"
+                  alt="використання небезпечної бритви у виконанні Сергія" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/chair.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/chair-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/chair.jpg"
-                  alt="the client feels relaxed on a comfortable chair in our barbershop" width="280" height="280">
+                  <source srcset="./images/about/interior.webp" media="(min-width: 576px)">
+                  <source srcset="./images/about/interior-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/about/interior.webp"
+                  alt="Сергій уважно придивляється до деталей зачіски" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/brash.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/brash-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/brash.jpg"
-                  alt="beard brash and clipper in Ronald Richards hands" width="280" height="280">
+                  <source srcset="./images/about/barber.webp" media="(min-width: 576px)">
+                  <source srcset="./images/about/barber-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/about/barber.webp"
+                  alt="вид з кімнати відпочинку на роботу Сергія" width="280" height="280">
                 </picture>
               </li>
             </ul>
 
-            <ul class="portfolio__bottom-list portfolio__bottom-list--hidden">
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/teenager.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/teenager-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/teenager.jpg"
-                    alt="Ronald Richards makes shaving of sideburns for teenager" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/scissors.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/scissors-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/scissors.jpg"
-                    alt="Ronald Richards showing his professionalism using scissors" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/detail.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/detail-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/detail.jpg"
-                    alt="every detail is important for Ronald Richards in his client's haircut" width="280"
-                    height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/woman.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/woman-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/woman.jpg"
-                    alt="gentle shaving from our barberian" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/edging.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/edging-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/edging.jpg"
-                    alt="superb hair edging by Ronald Richards" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/clipper.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/clipper-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/clipper.jpg"
-                    alt="modern and expensive clippers are in uses of Ronald Richards" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/chair.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/chair-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/chair.jpg"
-                    alt="the client feels relaxed on a comfortable chair in our barbershop" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/brash.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/brash-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/brash.jpg"
-                    alt="beard brash and clipper in Ronald Richards hands" width="280" height="280">
-                </picture>
-              </li>
-            </ul>
-
-            <button class="portfolio__btn-main btn-main" type="submit">
+            <a class="portfolio__btn-main btn-main link" href="https://instagram.com/strum_barbershop?igshid=NTdlMDg3MTY=">
               <svg class="portfolio__bottom-icon" width="20" height="20">
                 <use xlink:href="images/icons/sprite.svg#more"></use>
               </svg>
 
-              See all works
-            </button>
+              Дивитись всі роботи
+            </a>
           </div>
         </div>
       </section>
@@ -476,11 +295,11 @@
       <section class="portfolio" id="jane">
         <div class="container">
           <div class="portfolio__top">
-            <img class="portfolio__img" src="./images/portfolio/jane.jpg"
-              alt="Jane Cooper is concentrated on the working proccess" width="180" height="180">
+            <img class="portfolio__img" src="./images/portfolio/yuriy/shave.webp"
+              alt="Юрій Миронець професійно володіє машинкою" width="180" height="180">
 
             <h6 class="portfolio__title title">
-              Jane Cooper
+              Юрій Миронець
             </h6>
 
             <p class="portfolio__descr-text">
@@ -496,246 +315,150 @@
             <ul class="portfolio__bottom-list">
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/nozzle.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/nozzle-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/nozzle.jpg"
-                  alt="Jane Cooper makes shaving of beard using his dangerous razor" width="280" height="280">
+                  <source srcset="./images/portfolio/yuriy/brash.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/yuriy/brash-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/yuriy/brash.jpg"
+                  alt="Юрій витирає пінку для гоління після процедури" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/brunette.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/brunette-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/brunette.jpg" alt="our barberian is making a classical haircut"
+                  <source srcset="./images/portfolio/yuriy/danger.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/yuriy/danger-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/yuriy/danger.jpg" alt="використання небезпечної бритви у виконанні Юрія"
                   width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/arm.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/arm-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/arm.jpg"
-                  alt="view from behind of our barber's shoulder" width="280" height="280">
+                  <source srcset="./images/portfolio/yuriy/drying.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/yuriy/drying-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/yuriy/drying.jpg"
+                  alt="клієнту сушать волосся після миття голови" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/neck.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/neck-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/neck.jpg"
-                  alt="detail shaving of the neck" width="280" height="280">
+                  <source srcset="./images/portfolio/yuriy/instruments.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/yuriy/instruments-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/yuriy/instruments.jpg"
+                  alt="охайне робоче місце та чисті інструменти Юрія" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/robe.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/robe-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/robe.jpg"
-                  alt="preparing process before the haircut" width="280" height="280">
+                  <source srcset="./images/portfolio/yuriy/sideburns.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/portfolio/yuriy/sideburns-mob.jpg" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/portfolio/yuriy/sideburns.jpg"
+                  alt="Юрій стриже бакенбарди" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/instruments.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/instruments-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/instruments.jpg"
-                  alt="sterilized, clean tools lie on a towel" width="280" height="280">
+                  <source srcset="./images/about/interior.webp" media="(min-width: 576px)">
+                  <source srcset="./images/about/interior-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/about/interior.webp"
+                  alt="всі три барбери в робочому процесі" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/forelock.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/forelock-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/forelock.jpg"
-                  alt="forelock haircut" width="280" height="280">
+                  <source srcset="./images/about/barber.webp" media="(min-width: 576px)">
+                  <source srcset="./images/about/barber-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/about/barber.webp"
+                  alt="вид з кімнати відпочинку на роботу майстрів" width="280" height="280">
                 </picture>
               </li>
 
               <li class="portfolio__bottom-item">
                 <picture>
-                  <source srcset="./images/portfolio/spying.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/spying-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/spying.jpg"
-                  alt="photographer quietly took photo of the working process" width="280" height="280">
+                  <source srcset="./images/about/scissors.jpg" media="(min-width: 576px)">
+                  <source srcset="./images/about/scissors-mob.webp" media="(max-width: 576px)">
+                  <img class="portfolio__bottom-img" src="./images/about/scissors.jpg"
+                  alt="стерильні та чисті ножиці підвішені на своєму місці" width="280" height="280">
                 </picture>
               </li>
             </ul>
 
-            <ul class="portfolio__bottom-list portfolio__bottom-list--hidden">
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/nozzle.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/nozzle-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/nozzle.jpg"
-                    alt="Jane Cooper makes shaving of beard using his dangerous razor" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/brunette.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/brunette-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/brunette.jpg"
-                    alt="our barberian is making a classical haircut" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/arm.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/arm-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/arm.jpg"
-                    alt="view from behind of our barber's shoulder" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/neck.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/neck-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/neck.jpg" alt="detail shaving of the neck"
-                    width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/robe.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/robe-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/robe.jpg"
-                    alt="preparing process before the haircut" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/instruments.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/instruments-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/instruments.jpg"
-                  alt="sterilized, clean tools lie on a towel" width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/forelock.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/forelock-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/forelock.jpg" alt="forelock haircut"
-                    width="280" height="280">
-                </picture>
-              </li>
-
-              <li class="portfolio__bottom-item">
-                <picture>
-                  <source srcset="./images/portfolio/spying.jpg" media="(min-width: 576px)">
-                  <source srcset="./images/portfolio/spying-mob.jpg" media="(max-width: 576px)">
-                  <img class="portfolio__bottom-img" src="./images/portfolio/spying.jpg"
-                    alt="photographer quietly took photo of the working process" width="280" height="280">
-                </picture>
-              </li>
-            </ul>
-
-            <button class="portfolio__btn-main btn-main" type="submit">
+            <a class="portfolio__btn-main btn-main link" href="https://instagram.com/strum_barbershop?igshid=NTdlMDg3MTY=">
               <svg class="portfolio__bottom-icon" width="20" height="20">
                 <use xlink:href="images/icons/sprite.svg#more"></use>
               </svg>
 
-              See all works
-            </button>
+              дивитись всі роботи
+            </a>
           </div>
         </div>
       </section>
 
-      <div class="container consultation__container">
-        <div class="consultation">
-          <h5 class="consultation__title">
-            Get in consultation with our expert barbers
-          </h5>
-
-          <p class="consultation__descr-text">
-            Expand Call-to-Action Details
-          </p>
-
-          <form class="consultation__form">
-            <label class="consultation__label">
-              <span class="sr-only">Enter your phone number</span>
-              <input class="consultation__input" type="tel" placeholder="+1 (___) ___-__-__" required>
-
-              </input>
-            </label>
-            <label class="consultation__label">
-              <span class="sr-only">Enter your email</span>
-              <input class="consultation__input" type="email" placeholder="Email" required>
-
-              </input>
-            </label>
-
-            <button class="consultation__btn-main btn-main int" type="submit">
-              Book now
-            </button>
-
-            <label class="consultation__label consultation__label--checkbox">
-              <span class="sr-only">click here to confirm the agreement</span>
-              <input class="consultation__checkbox" type="checkbox" required>
-              By clicking on the button, you agree to the terms of processing personal data
-              </input>
-            </label>
-          </form>
-        </div>
-      </div>
-
       <section class="contact">
-        <div class="contact__wrapper" style="background-image: url('../images/contact/map.svg');" id="contact">
+        <div class="contact__wrapper" id="contact">
+          <iframe class="contact__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.0100089780435!2d30.773916115618412!3d50.51538057948435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97872dba459%3A0xa8cb17c7af3d5be!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjyDQodC40LzQvtC90LXQvdC60LAsIDMw0LAsINCR0YDQvtCy0LDRgNC4LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA3NDAw!5e0!3m2!1suk!2sua!4v1676125995233!5m2!1suk!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="container">
             <div class="contact__box">
               <h3 class="contact__title title">
-                Contacts
+                Контакти
               </h3>
-      
+
               <ul class="contact__list">
                 <li class="contact__item">
                   <svg class="contact__item-icon" width="54" height="54">
                     <use xlink:href="images/icons/sprite.svg#contact-tel"></use>
                   </svg>
 
-                  <a class="contact__item-link link click-area" href="tel:+88000000000">
-                    8 (800) 000-00-00
+                  <a class="contact__item-link link click-area" href="tel:+380996001454">
+                    +38 (099) 600-14-54
                   </a>
                 </li>
-                
+
+                <li class="contact__item contact__item--instagram">
+                  <svg class="contact__item-icon" width="30" height="30">
+                    <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
+
+                  <a class="contact__item-link link click-area"
+                    href="https://www.instagram.com/strum_barbershop/?igshid=NTdlMDg3MTY%3D">
+                    @strum_barbershop
+                  </a>
+                </li>
+
                 <li class="contact__item">
                   <svg class="contact__item-icon" width="54" height="54">
                     <use xlink:href="images/icons/sprite.svg#email"></use>
                   </svg>
 
-                  <a class="contact__item-link link click-area" href="mailto:info@sitename.com">
-                    info@sitename.com
+                  <a class="contact__item-link link click-area"
+                    href="https://n772994.alteg.io/company:726279?fbclid=PAAaY4osTu_tsO-hY04UYzbbOvJE3BcdIQ5JZYY63OardNHnyP4d30HDYMDY4">
+                    Онлайн запис на Altegio
                   </a>
                 </li>
-                
+
                 <li class="contact__item">
                   <svg class="contact__item-icon" width="54" height="54">
                     <use xlink:href="images/icons/sprite.svg#contact-location"></use>
                   </svg>
 
                   <p class="contact__item-text">
-                    302 W 50th St, NY, NY 10019
+                    м. Бровари, вул.Василя Симоненка, 30А
                   </p>
                 </li>
-                
+
                 <li class="contact__item">
                   <svg class="contact__item-icon" width="54" height="54">
                     <use xlink:href="images/icons/sprite.svg#clock"></use>
                   </svg>
 
                   <p class="contact__item-text">
-                    Daily from 9 to 20
+                    Пн - Нд з 10:00 - 21:00
                   </p>
                 </li>
               </ul>
@@ -745,10 +468,10 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <p class="footer__text">
-        © All rights reserved
-      </p>
+    <footer class="footer section">
+      <a class="logo footer__logo click-area int" href="#home">
+        <img class="logo__img" src="./images/icons/logo.svg" alt="логотип барбершопу струм" width="45" height="45">
+      </a>
     </footer>
     <script src="./js/main.min.js"></script>
   </body>

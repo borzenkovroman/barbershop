@@ -1,4 +1,4 @@
-.about {
+.about { 
 
   &__title {
     margin-bottom: 24px;
@@ -10,6 +10,10 @@
     @media (max-width: 768px) {
       margin-bottom: 30px;
     }
+  }
+
+  &__descr-text-concept {
+    float: left;
   }
 
   &__grid {
@@ -59,6 +63,7 @@
   &__box {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 
     @media (max-width: 768px) {
@@ -71,6 +76,9 @@
   } 
 
   &__btn-main {
+    padding: 18px 50px;
+    font-size: 20px;
+    text-transform: none;
 
     @media (max-width: 576px) {
       font-size: 14px;
